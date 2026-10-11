@@ -2,7 +2,6 @@ import * as Device from 'expo-device';
 import { Image, Platform, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { HintRow } from '@/components/hint-row';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { WebBadge } from '@/components/web-badge';
@@ -45,15 +44,12 @@ export default function HomeScreen() {
             source={require('../../assets/images/stadion.jpg')}/>
         </ThemedView>
         <ThemedView type="backgroundElement" style={styles.stepContainer}>
-          <HintRow
-            title="Try editing"
-            hint={<ThemedText type="code">src/app/index.tsx</ThemedText>}
-          />
-          <HintRow title="Dev tools" hint={getDevMenuHint()} />
-          <HintRow
-            title="Fresh start"
-            hint={<ThemedText type="code">npm run reset-project</ThemedText>}
-          />
+          <ThemedText style={{fontSize: 22,fontWeight: 'bold'}}>Dobrodošli</ThemedText>
+            <ThemedText>V tej strani vam mislim na kratko opisati nekaj o sebi in o mojem pogledu na nogomet.
+            </ThemedText>
+            <ThemedText>
+              Predstavil bom nekaj znacilnosti nogometa ter svoje mnenje o nogometu ter predstavil bom tudi malo sebe.
+            </ThemedText>
         </ThemedView>
 
         {Platform.OS === 'web' && <WebBadge />}
