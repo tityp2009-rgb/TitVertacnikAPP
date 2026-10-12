@@ -53,47 +53,26 @@ export default function TabTwoScreen() {
           <Collapsible title="Hobiji">
             <ThemedView type="backgroundElement" style={styles.collapsibleContent}>
               <ThemedText type="small">
-                You can open this project on Android, iOS, and the web. To open the web version,
-                press <ThemedText type="smallBold">w</ThemedText> in the terminal running this
-                project.
+               V prostem casu se ukvarjam z nogometom ter hodim v fitnes
               </ThemedText>
-              <Image
-                source={require('@/assets/images/tutorial-web.png')}
-                style={styles.imageTutorial}
-              />
             </ThemedView>
           </Collapsible>
 
           <Collapsible title="Zakaj delam to stran">
             <ThemedText type="small">
-              For static images, you can use the <ThemedText type="code">@2x</ThemedText> and{' '}
-              <ThemedText type="code">@3x</ThemedText> suffixes to provide files for different
-              screen densities.
+              To stran delam da predstavim nekaj o sebi ter o nogometu in kako jaz gledam na nogomet.
             </ThemedText>
-            <Image source={require('@/assets/images/react-logo.png')} style={styles.imageReact} />
-            <ExternalLink href="https://reactnative.dev/docs/images">
-              <ThemedText type="linkPrimary">Learn more</ThemedText>
-            </ExternalLink>
           </Collapsible>
 
           <Collapsible title="Nk Šoštanj">
             <ThemedText type="small">
-              This template has light and dark mode support. The{' '}
-              <ThemedText type="code">useColorScheme()</ThemedText> hook lets you inspect what the
-              user&apos;s current color scheme is, and so you can adjust UI colors accordingly.
+              Nk Šoštanj je nogometni klub iz Šoštanja, Njegov stadion se imenuje pod vilo Široko. Klub se nenehno razvija. Vec o klubu pa lahko izves na njihovi strani.
             </ThemedText>
-            <ExternalLink href="https://docs.expo.dev/develop/user-interface/color-themes/">
-              <ThemedText type="linkPrimary">Learn more</ThemedText>
+            <ExternalLink href="https://nk-sostanj.si">
+              <ThemedText type="linkPrimary">
+                Obišči spletno stran kluba
+              </ThemedText>
             </ExternalLink>
-          </Collapsible>
-
-          <Collapsible title="slike">
-            <ThemedText type="small">
-              This template includes an example of an animated component. The{' '}
-              <ThemedText type="code">src/components/ui/collapsible.tsx</ThemedText> component uses
-              the powerful <ThemedText type="code">react-native-reanimated</ThemedText> library to
-              animate opening this hint.
-            </ThemedText>
           </Collapsible>
         </ThemedView>
         {Platform.OS === 'web' && <WebBadge />}
@@ -147,7 +126,7 @@ const styles = StyleSheet.create({
   },
   collapsibleContent: {
     alignItems: 'center',
-    backgroundColor: '#46495C',
+  
   },
   imageTutorial: {
     width: '100%',
