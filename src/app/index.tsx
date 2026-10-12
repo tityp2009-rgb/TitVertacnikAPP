@@ -35,6 +35,9 @@ export default function HomeScreen() {
           <ThemedText type="title" style={styles.title}>
             Nogomet skozi moje oči
           </ThemedText>
+          
+        </ThemedView>
+        <ThemedView style={styles.container}>
           <Image
             style={{width: 320,
                     height: 200,

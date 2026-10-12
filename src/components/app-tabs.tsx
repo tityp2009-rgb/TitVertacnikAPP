@@ -27,6 +27,15 @@ export default function AppTabs() {
           renderingMode="template"
         />
       </NativeTabs.Trigger>
+
+      <NativeTabs.Trigger name="nogomet">
+        <NativeTabs.Trigger.Label>Nogomet</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon
+          src={require('@/assets/images/tabIcons/nogomet.jpg')}
+          renderingMode="template"
+        />
+      </NativeTabs.Trigger>
+
     </NativeTabs>
   );
 }

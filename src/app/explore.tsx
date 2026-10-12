@@ -39,7 +39,7 @@ export default function TabTwoScreen() {
       <ThemedView style={styles.container}>
         <ThemedView style={styles.titleContainer}>
           <ThemedText type="subtitle" style={{color: '#FFFFFF'}}>Tit Vertačnik</ThemedText>
-          <Image style={{width:200, height:200, borderRadius: 50,}}
+          <Image style={{width:'60%', aspectRatio: 1 / 1, borderRadius: 50,}}
           source={require('../../assets/images/moja-slika.jpg')}/>  
         </ThemedView>
 
